@@ -27,8 +27,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'pnpm'
+          check-latest: false
 
       - name: Install dependencies
         run: pnpm install
@@ -68,8 +69,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'pnpm'
+          check-latest: false
 
       - name: Install dependencies
         run: pnpm install
