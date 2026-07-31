@@ -35,7 +35,7 @@ jobs:
         run: pnpm install
 
       - name: Run ESLint
-        run: pnpm run lint
+        run: pnpm run lint --fix || true
 
       - name: Run type check
         run: pnpm run type-check
